@@ -1,0 +1,207 @@
+body {
+    background-color: #d84242;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.mr-10 {
+    margin-right: 7px;
+}
+
+.mt-10 {
+    margin-top: 7px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.body-bgTop {
+    background: url(../img/bg1.jpg) no-repeat top center;
+    width: 100%;
+    height: 288px;
+    position: relative;
+    z-index: 10;
+}
+
+.body-bg {
+    background: url(../img/bg2.jpg) no-repeat center center;
+    width: 100%;
+    height: 546px;
+    position: relative;
+    z-index: 10;
+}
+
+.body-bgBottom {
+    background: url(../img/bg3.jpg) no-repeat bottom center;
+    width: 100%;
+    height: 146px;
+    position: relative;
+    z-index: 1;
+}
+
+.div-gif {
+    width: 339px;
+    height: 113px;
+    margin: 0 auto;
+    padding: 160px 0px;
+    background: url(../img/start_bg.gif) no-repeat center center;
+}
+
+.div-prize {
+    width: 200px;
+    height: 53px;
+    margin: 0 auto;
+    padding: 30px 70px;
+    display: block;
+    background: url(../img/start.gif) no-repeat center center;
+    z-index: 15;
+}
+
+.prizeBox {
+    width: 125px;
+    height: 60px;
+    display: block;
+    float: left;
+    background: url(../img/chou_bg.png) no-repeat 0 0;
+    box-shadow: 0.5px 0.5px 3px #000;
+    -webkit-box-shadow: 0.5px 0.5px 3px #000;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.prizeBox:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-box-shadow: 0 0 1px 2px rgb(250, 255, 0);
+    -moz-box-shadow: 0 0 1px 2px rgb(250, 255, 0);
+    box-shadow: 0 0 1px 2px rgb(250, 255, 0);
+    z-index: 9999;
+}
+
+.prizeBoxSelect {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-box-shadow: 0 0 1px 2px rgb(250, 255, 0);
+    -moz-box-shadow: 0 0 1px 2px rgb(250, 255, 0);
+    box-shadow: 0 0 1px 2px rgb(250, 255, 0);
+    z-index: 9999;
+}
+
+.body-center {
+    width: 1051px;
+    height: 527px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.center_right {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+}
+
+.center_bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.center_left {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+
+.center_left ul, .center_right ul {
+    margin: 0;
+    padding: 0;
+}
+
+.center_left ul li a, .center_right ul li a {
+    clear: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.cover-grey {
+    width: 100%;
+    height: 100%;
+    background: #d2d2d2;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -333px;
+    width: 666px;
+    height: 464px;
+    -webkit-box-shadow: 0.5px 0.5px 3px #000;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    transition: 2s;
+}
+
+.box_bg {
+    width: 621px;
+    height: 464px;
+    background: url(../img/red_packet_1.png) no-repeat 0 0;
+    position: absolute;
+    z-index: 102;
+}
+
+.box_bg span {
+    font: 100px/24px '黑体';
+    color: #ffe119;
+    letter-spacing: 1px;
+    display: block;
+    width: 100%;
+    margin-top: 300px;
+    margin-left: 6px;
+    text-align: center;
+}
+
+.del_a {
+    width: 50px;
+    height: 50px;
+    float: right;
+    background: url(../img/red_packet_2.png) no-repeat 0 0;
+    position: absolute;
+    right: 0px;
+    top: 13px;
+    z-index: 90;
+    margin-right: -49px;
+}
+
+.del_a:hover {
+    background: url(../img/red_packet_2.png) no-repeat 0 -51px;
+    cursor: pointer;
+}
+

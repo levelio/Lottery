@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>学易云2014年年终抽奖</title>
+    <link rel="stylesheet" href="lib/css/screen.css"/>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/controllers.js"></script>
+    <script src="services/services.js"></script>
+    <script src="directives/directives.js"></script>
+</head>
+<body ng-app="ngPrize" ng-controller="MainController" ng-init="Init()" ng-enter="gameStart()">
+<div class="body-bgTop"></div>
+<div class="body-bg">
+    <div class="body-center">
+        <!--抽奖专区上右下左-->
+        <div class="center_top clearfix">
+            <prize-load-tb prizes="topPrize"></prize-load-tb>
+        </div>
+        <div class="center_right">
+            <prize-load-lr prizes="rightPrize"></prize-load-lr>
+        </div>
+        <div class="center_bottom">
+            <prize-load-tb prizes="bottomPrize"></prize-load-tb>
+        </div>
+        <div class="center_left">
+            <prize-load-lr prizes="leftPrize"></prize-load-lr>
+        </div>
+        <div class="div-gif">
+            <a href="javascript:void(0);" class="div-prize" ng-click="gameStart()"></a>
+        </div>
+    </div>
+</div>
+<div class="body-bgBottom"></div>
+<end-dialog prize="lotterPrize" game-state="gameState" ng-show="gameState=='stop'"></end-dialog>
+<audio id="music" src="lib/music/prize.mp3" controls="controls" loop="false" hidden="true"/>
+</body>
+</html>
+

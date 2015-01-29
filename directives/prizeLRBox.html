@@ -1,0 +1,7 @@
+<ul>
+    <li ng-repeat="prize in prizes track by $index">
+        <a href="javascript:void(0)" class="prizeBox mt-10" ng-class="{'prizeBoxSelect':prize.select}">
+            <img ng-src="{{prize.url}}" width="125" height="60" />
+        </a>
+    </li>
+</ul>
